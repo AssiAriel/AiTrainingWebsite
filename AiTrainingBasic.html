@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Training - Basic</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+	    /* Body and lists style */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        p {
+            margin-top: 7px;
+            color: black;
+        }
+	    ol li {
+            margin-bottom: 20px;
+			color: blue;
+        }
+ 
+	    /* Titels style */
+        .TitleHead {
+            font-size: 32px;
+            color: rgb(45, 100, 232);
+            text-decoration: underline;
+		}
+    	.TitleList1Blue {
+            font-size: 24px;
+            color: rgb(45, 100, 232);
+            text-decoration: underline;
+		    margin-top: 40px;
+		    margin-bottom: 10px;
+		}
+        .TitleList2Blue {
+            font-size: 18px;
+            color: rgb(45, 100, 232);
+            text-decoration: underline;
+		}
+ 
+        /* Videos preview style */
+        .video-container li a {
+            display: block;
+            margin-bottom: 8px;
+            list-style: decimal;
+            }
+
+        .preview-container a {
+            display: block;
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 8px;
+            text-decoration: none;
+        }
+		
+        /* Sites preview style */
+        .iframe-wrapper {
+            width: 300px; /* Preview box size */
+            height: 170px;
+            overflow: hidden; /* Hide any overflow */
+            position: relative;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        .iframe-wrapper iframe {
+            width: 1000px; /* Set iframe larger than the preview container */
+            height: 800px; /* Adjust based on the actual website size */
+            transform: scale(0.3); /* Scale down to fit within the small window */
+            transform-origin: top left; /* Keep the scaling from top-left */
+            position: absolute; /* Position the iframe within the container */
+            top: 0;
+            left: 0;
+            border: none;
+            pointer-events: none; /* Makes the iframe non-interactive */
+            overflow: hidden; /* Hide overflow */
+        }
+    </style>
+	
+</head>
+<!----------------------------------------------------------------------------------------------->
+<body>
+    <p class="TitleHead">AI Training - Basic</p>  
+	
+    <!--- Basic Training - Vidoes -->
+    <p class="TitleList1Blue">Basic Training - Videos</p>
+	<p>Note that sometimes adding the subtitles, or watching slower/faster helps.</p>
+    <div class="video-container">
+    <ol>
+        <li>
+		<a href="https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" target="_blank">But what is a neural network? | Deep learning chapter 1 (3Blue1Brown)</a>
+	    <iframe width="300" height="170" src="https://www.youtube.com/embed/aircAruvnKk" frameborder="0" allowfullscreen></iframe>
+		</li>
+		<li>
+		<a href="https://www.youtube.com/watch?v=IHZwWFHWa-w&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" target="_blank">Gradient descent, how neural networks learn | DL2 (3Blue1Brown)</a>
+        <iframe width="300" height="170" src="https://www.youtube.com/embed/IHZwWFHWa-w" frameborder="0" allowfullscreen></iframe>
+		</li>
+        <li>
+		<a href="https://www.youtube.com/watch?v=Ilg3gGewQ5U&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" target="_blank">Backpropagation, intuitively | DL3 (3Blue1Brown)</a>
+	    <iframe width="300" height="170" src="https://www.youtube.com/embed/Ilg3gGewQ5U" frameborder="0" allowfullscreen></iframe>
+		</li>
+        <li>
+		<a href="https://www.youtube.com/watch?v=tIeHLnjs5U8&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" target="_blank">Backpropagation calculus | DL4 (3Blue1Brown)</a>
+	    <iframe width="300" height="170" src="https://www.youtube.com/embed/tIeHLnjs5U8" frameborder="0" allowfullscreen></iframe>
+		</li>
+        <li>
+		<a href="https://www.youtube.com/watch?v=LPZh9BOjkQs&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" target="_blank">Large Language Models explained briefly (3Blue1Brown)</a>
+	    <iframe width="300" height="170" src="https://www.youtube.com/embed/LPZh9BOjkQs" frameborder="0" allowfullscreen></iframe>
+		</li>
+        <li>
+		<a href="https://www.youtube.com/watch?v=wjZofJX0v4M&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" target="_blank">Transformers (how LLMs work) explained visually | DL5 (3Blue1Brown)</a>
+	    <iframe width="300" height="170" src="https://www.youtube.com/embed/wjZofJX0v4M" frameborder="0" allowfullscreen></iframe>
+		</li>
+        <li>
+		<a href="https://www.youtube.com/watch?v=eMlx5fFNoYc&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" target="_blank">Attention in transformers, step-by-step | DL6 (3Blue1Brown)</a>
+	    <iframe width="300" height="170" src="https://www.youtube.com/embed/eMlx5fFNoYc" frameborder="0" allowfullscreen></iframe>
+		</li>
+        <li>
+		<a href="https://www.youtube.com/watch?v=9-Jl0dxWQs8&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" target="_blank">How might LLMs store facts | DL7 (3Blue1Brown)</a>
+	    <iframe width="300" height="170" src="https://www.youtube.com/embed/9-Jl0dxWQs8" frameborder="0" allowfullscreen></iframe>
+		</li>
+	    <li>
+		<a href="https://www.youtube.com/watch?v=KJtZARuO3JY" target="_blank">Visualizing transformers and attention | Talk for TNG Big Tech Day '24 (Grant Sanderson)</a>
+        <iframe width="300" height="170" src="https://www.youtube.com/embed/KJtZARuO3JY" frameborder="0" allowfullscreen></iframe>
+		</li>
+        <li>
+		<a href="https://www.youtube.com/watch?v=zjkBMFhNj_g" target="_blank">[1hr Talk] Intro to Large Language Models (Andrej Karpathy)</a>
+        <iframe width="300" height="170" src="https://www.youtube.com/embed/zjkBMFhNj_g" frameborder="0" allowfullscreen></iframe>
+		</li>
+        <li>
+		<a href="https://www.youtube.com/watch?v=7xTGNNLPyMI" target="_blank">Deep Dive into LLMs like ChatGPT (Andrej Karpathy)</a>
+        <iframe width="300" height="170" src="https://www.youtube.com/embed/7xTGNNLPyMI" frameborder="0" allowfullscreen></iframe>
+		</li>
+		<li>
+		<a href="https://www.youtube.com/watch?v=WXuK6gekU1Y" target="_blank">AlphaGo - The Movie | Full award-winning documentary</a>
+	    <iframe width="300" height="170" src="https://www.youtube.com/embed/WXuK6gekU1Y" frameborder="0" allowfullscreen></iframe>
+		<p>Just a nice documentary movie.</p>
+		</li>
+    </ol>
+    </div>
+
+<!----------------------------------------------------------------------------------------------->
+
+    <!--- Basic Training - Web Sites -->
+    <p class="TitleList1Blue">Basic Training - Web Sites</p>
+    <ol>
+        <li>
+		<p><a href="https://tiktokenizer.vercel.app/?model=cl100k_base" target="_blank">Tiktokenizer</a></p>
+        <div class="iframe-wrapper">
+        <iframe src="https://tiktokenizer.vercel.app/?model=cl100k_base"></iframe>
+        </div>
+		<p>Text to Tokens by different models.</p>
+		</li>
+		
+        <li>
+		<p><a href="https://lmarena.ai/leaderboard" target="_blank">Chatbot Arena</a></p>
+        <div class="iframe-wrapper">
+        <iframe src="https://lmarena.ai/leaderboard"></iframe>
+        </div>
+		<p>Comparing LLM models by users, Leaderboard tab shows the current ranking.</p>
+		</li>
+
+        <li>
+		<p><a href="https://lambda.ai/service/gpu-cloud" target="_blank">Lambda On-Demand Cloud</a></p>
+        <div class="iframe-wrapper">
+        <iframe src="https://lambda.ai/service/gpu-cloud"></iframe>
+        </div>
+		<p>Renting by the hour a cloud computer for running models (there also are other sites).</p>
+		</li>
+    </ol>
+
+</body>
+</html>
+<!----------------------------------------------------------------------------------------------->

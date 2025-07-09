@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Training - Code</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+	    /* Body and lists style */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        p {
+            margin-top: 7px;
+            color: black;
+        }
+	    ol li {
+            margin-bottom: 20px;
+			color: blue;
+        }
+ 
+	    /* Titels style */
+        .TitleHead {
+            font-size: 32px;
+            color: rgb(45, 100, 232);
+            text-decoration: underline;
+		}
+    	.TitleList1Blue {
+            font-size: 24px;
+            color: rgb(45, 100, 232);
+            text-decoration: underline;
+		    margin-top: 40px;
+		    margin-bottom: 10px;
+		}
+        .TitleList2Blue {
+            font-size: 18px;
+            color: rgb(45, 100, 232);
+            text-decoration: underline;
+		}
+ 
+        /* Videos preview style */
+        .video-container li a {
+            display: block;
+            margin-bottom: 8px;
+            list-style: decimal;
+            }
+
+        .preview-container a {
+            display: block;
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 8px;
+            text-decoration: none;
+        }
+		
+        /* Sites preview style */
+        .iframe-wrapper {
+            width: 300px; /* Preview box size */
+            height: 170px;
+            overflow: hidden; /* Hide any overflow */
+            position: relative;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        .iframe-wrapper iframe {
+            width: 1000px; /* Set iframe larger than the preview container */
+            height: 800px; /* Adjust based on the actual website size */
+            transform: scale(0.3); /* Scale down to fit within the small window */
+            transform-origin: top left; /* Keep the scaling from top-left */
+            position: absolute; /* Position the iframe within the container */
+            top: 0;
+            left: 0;
+            border: none;
+            pointer-events: none; /* Makes the iframe non-interactive */
+            overflow: hidden; /* Hide overflow */
+        }
+    </style>
+	
+</head>
+<!----------------------------------------------------------------------------------------------->
+<body>
+    <p class="TitleHead">AI Training - Code</p>  
+
+    <!--- Code Training - Tools -->
+    <p class="TitleList1Blue">Code Training - Tools</p>
+    <ol>
+	    <li>
+		<p class="TitleList2Blue">Python</p>
+        <ol>
+            <li>
+			<p><a href="https://www.python.org/" target="_blank">Python installation</a></p>
+			<img src="python path.png" alt="python path" width="300" style="border: 2px solid black;">
+		    <p>Add path - if it is not there.</p>
+		    </li>
+            <li>Python Language
+	    	<p>You will need Python knowledge.
+			<br>The projects videos in the next section do teach the relevant Python (and you can use Google/YouTube/ChatGPT for more details),
+			<br>but it you have no knowledge of Python, it might be easier to start with some online course.</p>
+    		</li>
+        </ol>
+        </li>
+
+        <li>
+		<p class="TitleList2Blue">Jupyter Notebook</p>
+        <ol>
+            <li>Jupyter installation
+			<p><img src="Jupyter installation.png" alt="Jupyter installation" width="400" style="border: 2px solid black;"></p>
+     		<p>pip install jupyter</p>
+			<p><img src="Jupyter notebook.png" alt="Jupyter notebook" width="400" style="border: 2px solid black;"></p>
+			</li>
+			<li>Run Jupyter notebook
+			<p><img src="New notebook.png" alt="New notebook" width="400" style="border: 2px solid black;"></p>
+			</li>
+		</ol>	
+		</li>
+		
+        <li>
+		<p class="TitleList2Blue">libraries</p>
+     	<ol>
+	    	<img src="numpy.png" alt="numpy" width="400" style="border: 2px solid black;">
+			<li><p>pip install numpy</p></li>
+			<li><p>pip install matplotlib</p></li>
+     		<p>Note - you will probably need to restart Jupyter (or whatever you are using).</p>
+		</ol>
+		</li>
+		
+        <li>
+		<p class="TitleList2Blue">Graphviz</p>
+		<ol>
+    		<li>
+		    <p>pip install graphviz</p>
+            <p>(in addition requires the installation below)</p>
+	    	</li>
+	    	<li>
+		    <p><a href="https://graphviz.org/download/" target="_blank">Graphviz installation</a><p>
+			<img src="Graphviz.png" alt="python path" width="300" style="border: 2px solid black;">
+		    <p>Mark Add path...</p>
+		    </li>
+		</ol>
+		
+        <li>
+		<p class="TitleList2Blue">PyTorch</p>
+		<ol>
+    		<li>
+    		<a href="https://pytorch.org/get-started/locally/" target="_blank">PyTorch Site</a>
+			<p>pip3 install torch torchvision torchaudio</p>
+		    <p>The above is the command for runing on CPU. In case of Nvidia GPU get from the site the CUDA installation command.</p>
+			</li>
+    		<li>
+    		<a href="https://docs.pytorch.org/docs/stable/torch.html" target="_blank">PyTorch documentation</a>
+			<p>You can serach there for Torch commands and options.</p>
+			</li>
+		</ol>
+		</li>
+		
+        <li>
+		<p class="TitleList2Blue">Visual Studio Code</p>
+		<ol>
+		    <li>
+		    <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code installation</a>
+			</li>
+		</ol>
+        </li>
+
+        <li>
+		<p class="TitleList2Blue">Git</p>
+		<ol>
+		    <li>
+		    <p><a href="https://www.youtube.com/watch?v=gbNFcuCGffk" target="_blank">Git, GitHub, Copilot YouTube - installation and getting started video</a></p>
+            <div class="preview-container">
+	        <iframe width="300" height="170" src="https://www.youtube.com/embed/gbNFcuCGffk" frameborder="0" allowfullscreen></iframe>
+            </div>
+			</li>
+		
+		    <li>
+		    <a href="https://git-scm.com/" target="_blank">Git installation</a>
+			</li>
+		</ol>
+        </li>
+
+        <li>
+		<p class="TitleList2Blue">GitHub</p>
+		<ol>
+		    <li>
+		    <p><a href="https://github.com/" target="_blank">GitHub Site</a></p>
+			<img src="GitHubSign.png" alt="python path" width="300" style="border: 2px solid black;">
+			<p>Sign in.</p>
+			</li>
+		</ol>
+        </li>
+
+        <li>
+		<p class="TitleList2Blue">GitHub Copilot on Visual Studio Code</p>
+		<ol>
+		    <li>Set Copilot
+			<p><img src="VsGitHubCopilot.png" alt="python path" width="300" style="border: 2px solid black;"></p>
+			<p>Set Copilot Inside Visual Studio Code.</p>
+			</li>
+		</ol>
+        </li>
+
+        <li>
+		<p class="TitleList2Blue">Colab</p>
+		<ol>
+		    <li>
+		    <a href="https://colab.research.google.com/#scrollTo=Nma_JWh-W-IF" target="_blank">Colab Site</a>
+	        <p>Online - no installation.
+			<br>Run your code on online GPUs (much faster than local just CPU), 'Runtime-->Change runtime type'.
+			<br>Share your code.
+			<br>Open others code (like the code in the examples below).
+			<br>You can save a private copy of the code to your Google Drive: 'File-->Save a copy in Drive'.</p>
+			</li>
+		</ol>
+        </li>
+
+        <li>
+		<p class="TitleList2Blue">Optional - Notepad++</p>
+		<ol>
+		    <li>
+		    <a href="https://notepad-plus-plus.org/downloads/" target="_blank">Notepad++ installation</a>
+			</li>
+		</ol>
+        </li>
+
+        <li>
+		<p class="TitleList2Blue">Optional - Sublime text</p>
+		<ol>
+		    <li>
+		    <a href="https://notepad-plus-plus.org/downloads/" target="_blank">Sublime text installation</a>
+			</li>
+		</ol>
+        </li>
+		
+	    <li>
+		<p class="TitleList2Blue">Optional - Excalidraw</p>
+        <ol>
+            <li>
+			<a href="https://excalidraw.com/" target="_blank">Excalidraw installation</a>
+    		<p>Just an online draw board.</p>
+		    </li>
+        </ol>
+        </li>
+
+    </ol>
+
+<!----------------------------------------------------------------------------------------------->
+
+   <!--- Code Training - Projects -->
+	<p class="TitleList1Blue">Code Training - Projects</p>
+    <ol>
+	    <li>
+		<p class="TitleList2Blue">Backpropagation - example code</p>
+        <ol>
+            <li>
+			<p><a href="https://www.youtube.com/watch?v=VMj-3S1tku0" target="_blank">The spelled-out intro to neural networks and backpropagation: building micrograd (Andrej Karpathy)</a></p>
+            <div class="preview-container">
+	        <iframe width="300" height="170" src="https://www.youtube.com/embed/VMj-3S1tku0" frameborder="0" allowfullscreen></iframe>
+            </div>
+ 	     	<p>Backpropagation example code.</p>
+			
+		    </li>
+            <li>
+            <a href="https://github.com/karpathy/micrograd" target="_blank">GitHub: github.com/karpathy/micrograd</a>
+        	<p>GitHub of the above "micrograd" project.</p>
+            </li>
+        </ol>
+        </li>
+		
+	    <li>
+		<p class="TitleList2Blue">MLP Neural Network character generation - example code</p>
+        <ol>
+            <li>
+			<p><a href="https://www.youtube.com/watch?v=PaCmpygFfXo" target="_blank">The spelled-out intro to language modeling: building makemore (Andrej Karpathy)</a></p>
+            <div class="preview-container">
+	        <iframe width="300" height="170" src="https://www.youtube.com/embed/PaCmpygFfXo" frameborder="0" allowfullscreen></iframe>
+            </div>
+ 	     	<p>Part 1: Bigram - Character generation example code.</p>
+		    </li>
+
+            <li>
+			<p><a href="https://www.youtube.com/watch?v=TCH_1BHY58I" target="_blank">Building makemore Part 2: MLP (Andrej Karpathy)</a></p>
+            <div class="preview-container">
+	        <iframe width="300" height="170" src="https://www.youtube.com/embed/TCH_1BHY58I" frameborder="0" allowfullscreen></iframe>
+            </div>
+ 	     	<p>Part 2: MLP - Character generation example code.</p>
+		    </li>
+
+            <li>
+            <a href="https://colab.research.google.com/drive/1H5CSy-OnisagUgDUXhHwo1ng2pjKHYSN?usp=sharing" target="_blank">Colab: build makemore batchnorm.ipynb</a>
+        	<p>Colab of the above "makemore" project.</p>
+            </li>
+
+            <li>
+            <a href="https://github.com/karpathy/makemore" target="_blank">GitHub: github.com/karpathy/makemore</a>
+        	<p>GitHub of the above "makemore" project.</p>
+            </li>
+        </ol>
+        </li>
+		
+	    <li>
+		<p class="TitleList2Blue">GPT-1 character generation - example code</p>
+        <ol>
+            <li>
+			<p><a href="https://www.youtube.com/watch?v=kCc8FmEb1nY" target="_blank">Let's build GPT: from scratch, in code, spelled out. (Andrej Karpathy)</a></p>
+            <div class="preview-container">
+	        <iframe width="300" height="170" src="https://www.youtube.com/embed/kCc8FmEb1nY" frameborder="0" allowfullscreen></iframe>
+            </div>
+ 	     	<p>GPT-1 character generation example code.</p>
+		    </li>
+			
+            <li>
+            <a href="https://colab.research.google.com/drive/1JMLa53HDuA-i7ZBmqV7ZnA3c_fvtXnx-?usp=sharing#scrollTo=nql_1ER53oCf" target="_blank">Colab: gpt-dev.ipynb</a>
+        	<p>Colab of the above "nanoGPT" project.</p>
+            </li>
+
+            <li>
+            <a href="https://github.com/karpathy/nanoGPT" target="_blank">GitHub: github.com/karpathy/nanoGPT</a>
+        	<p>GitHub of the above "nanoGPT" project.</p>
+            </li>
+        </ol>
+        </li>
+		
+    </ol>
+
+</body>
+</html>
+<!----------------------------------------------------------------------------------------------->

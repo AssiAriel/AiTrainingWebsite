@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Training - Advanced</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+	    /* Body and lists style */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        p {
+            margin-top: 7px;
+            color: black;
+        }
+	    ol li {
+            margin-bottom: 20px;
+			color: blue;
+        }
+ 
+	    /* Titels style */
+        .TitleHead {
+            font-size: 32px;
+            color: rgb(45, 100, 232);
+            text-decoration: underline;
+		}
+    	.TitleList1Blue {
+            font-size: 24px;
+            color: rgb(45, 100, 232);
+            text-decoration: underline;
+		    margin-top: 40px;
+		    margin-bottom: 10px;
+		}
+        .TitleList2Blue {
+            font-size: 18px;
+            color: rgb(45, 100, 232);
+            text-decoration: underline;
+		}
+ 
+        /* Videos preview style */
+        .video-container li a {
+            display: block;
+            margin-bottom: 8px;
+            list-style: decimal;
+            }
+
+        .preview-container a {
+            display: block;
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 8px;
+            text-decoration: none;
+        }
+		
+        /* Sites preview style */
+        .iframe-wrapper {
+            width: 300px; /* Preview box size */
+            height: 170px;
+            overflow: hidden; /* Hide any overflow */
+            position: relative;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        .iframe-wrapper iframe {
+            width: 1000px; /* Set iframe larger than the preview container */
+            height: 800px; /* Adjust based on the actual website size */
+            transform: scale(0.3); /* Scale down to fit within the small window */
+            transform-origin: top left; /* Keep the scaling from top-left */
+            position: absolute; /* Position the iframe within the container */
+            top: 0;
+            left: 0;
+            border: none;
+            pointer-events: none; /* Makes the iframe non-interactive */
+            overflow: hidden; /* Hide overflow */
+        }
+    </style>
+	
+</head>
+<!----------------------------------------------------------------------------------------------->
+<body>
+    <p class="TitleHead">AI Training - Advanced</p>  
+	
+   <!--- Advanced Training - Papers -->
+	<p class="TitleList1Blue">Advanced Training - Papers</p>
+    <ol>
+	    <li>
+		<p class="TitleList2Blue">Transformer (and RNR)</p>
+    	<p>This Transformer (the published paper) relates to a Translation application and not to a Generative model - 
+	    <br>it has the basics of a Generative model but the architecture is different.</p>
+        <ol>
+            <li>
+			<p><a href="https://www.youtube.com/watch?v=bCz4OMemCcA" target="_blank">Attention is all you need (Transformer) - Model explanation (including math), Inference and Training (Umar Jamil)</a></p>
+            <div class="preview-container">
+	        <iframe width="300" height="170" src="https://www.youtube.com/embed/bCz4OMemCcA" frameborder="0" allowfullscreen></iframe>
+            </div>
+ 	     	<p>Transformer basic explanation - specifically the 'Attention is all you need' paper.</p>
+		    </li>
+			
+            <li>
+			<p><a href="https://nanonets.com/webflow-bundles/feb23update/RAG_for_PDFs/build_v6/attention-is-all-you-need.pdf" target="_blank">Attention Is All You Need</a></p>
+            <div class="iframe-wrapper">
+            <iframe src="https://nanonets.com/webflow-bundles/feb23update/RAG_for_PDFs/build_v6/attention-is-all-you-need.pdf"></iframe>
+            </div>
+    	    <p>The published Paper by Google for Transformer.</p>
+            </li>
+        </ol>
+        </li>
+		
+	    <li>
+		<p class="TitleList2Blue">GPT-1</p>
+		<p><a href="https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf" target="_blank">Improving Language Understanding by Generative Pre-Training</a></p>
+        <div class="iframe-wrapper">
+        <iframe src="https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"></iframe>
+        </div>
+    	<p>The published Paper by OPenAI for GPT-1.</p>
+        </li>
+
+		
+    </ol>
+
+<!----------------------------------------------------------------------------------------------->
+
+    <!--- Advanced Training - Videos -->
+    <p class="TitleList1Blue">Advanced Training - Videos</p>
+    <div class="video-container">
+    <ol>
+		<li>
+		<a href="https://www.youtube.com/watch?v=OFS90-FX6pg" target="_blank">The 35 Year History of ChatGPT (Art of the Problem)</a>
+	    <iframe width="300" height="170" src="https://www.youtube.com/embed/OFS90-FX6pg" frameborder="0" allowfullscreen></iframe>
+		<p>The above "The 35 Year History of ChatGPT" video lists the historical published papers.</p>
+		</li>
+		
+		<li>
+		<a href="https://www.youtube.com/watch?v=90mGPxR2GgY" target="_blank">BERT explained: Training, Inference, BERT vs GPT/LLamA, Fine tuning, [CLS] token (Umar Jamil)</a>
+	    <iframe width="300" height="170" src="https://www.youtube.com/embed/90mGPxR2GgY" frameborder="0" allowfullscreen></iframe>
+		<p>BERT - basic differences explanation.</p>
+		</li>
+
+  		<li>
+		<a href="https://www.youtube.com/watch?v=UiX8K-xBUpE" target="_blank">Mistral / Mixtral Explained: Sliding Window Attention, Sparse Mixture of Experts, Rolling Buffer (Umar Jamil)</a>
+	    <iframe width="300" height="170" src="https://www.youtube.com/embed/UiX8K-xBUpE" frameborder="0" allowfullscreen></iframe>
+		<p>Mistral - basic differences explanation.</p>
+		</li>
+		
+    </ol>
+    </div>
+  	
+<!----------------------------------------------------------------------------------------------->
+
+    <!--- Advanced Training - Code -->
+    <p class="TitleList1Blue">Advanced Training - Code</p>
+    <div class="video-container">
+    <ol>
+		<li>
+		<a href="https://www.youtube.com/watch?v=P6sfmUTpUmc" target="_blank">Building makemore Part 3: Activations & Gradients, BatchNorm (Andrej Karpathy)</a>
+        <div class="preview-container">
+	    <iframe width="300" height="170" src="https://www.youtube.com/embed/P6sfmUTpUmc" frameborder="0" allowfullscreen></iframe>
+        </div>
+ 	    <p>Part 3: BatchNorm and optimization - Character generation example code.
+ 	    <br>Note that we skip videos part 4 and part 5 - they are very optional.</p>
+		</li>
+
+		<li>
+		<a href="https://www.youtube.com/watch?v=zduSFxRajkE" target="_blank">Let's build the GPT Tokenizer (Andrej Karpathy)</a>
+        <div class="preview-container">
+	    <iframe width="300" height="170" src="https://www.youtube.com/embed/zduSFxRajkE" frameborder="0" allowfullscreen></iframe>
+        </div>
+		</li>
+
+ ........ 
+	Let's reproduce GPT-2 (124M)
+
+
+    </ol>
+    </div>
+
+</body>
+</html>
+
+<!----------------------------------------------------------------------------------------------->
